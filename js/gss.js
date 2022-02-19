@@ -1,4 +1,3 @@
-console.log('boutech');
 // https://developer.mozilla.org/fr/docs/Web/JavaScript
 /* 
  Boutech Pro By G2S (Globale Soft Services) First projet by Xarala Academy Azur : Mentor Ousseynou DIOP Team xarala.
@@ -17,15 +16,13 @@ console.log(myVar);
 
 let test = 'text ' + myVar;
 let test2 = `text ${myVar}`;
-console.log(test);
-console.log(test2);
+
 
 // boolean
 
 let isTrue = true;
 let isFalse = false;
 
-console.log(isFalse)
 
 // chiffres et opérateurs 
 
@@ -33,27 +30,23 @@ let chiffre1 = 4;
 let chiffre2 = 3;
 
 // calcul
-console.log(chiffre1 + chiffre2)
-console.log(chiffre1 - chiffre2)
-console.log(chiffre1 / chiffre2)
-console.log(chiffre1 * chiffre2)
+
 
 // conditions - if et les switch
 
 if (chiffre1 < chiffre2) {
-    console.log('condition est valide');
+   
 }
 if (chiffre1 < 2) {
-    console.log('...');
+    
 } else {
-    console.log('condition non valide');
+   
 }
 
 // tableaux
 
 let tableau = ['item 1', 'item 2', 'item 3', 'item 4'];
-console.log(tableau);
-console.log(tableau[0]);
+
 
 // objets 
 
@@ -61,16 +54,16 @@ let obj = {
     title: 'mon titre',
     description: 'ma description'
 }
-console.log(obj.title, obj.description);
+
 
 // les boucles - while, for, foreach, switch
 
 for (let i = 0; i < tableau.length; i++) {
     const elem = tableau[i];
-    console.log('array ' + elem)
+    
 }
 tableau.forEach(elem => {
-    console.log('obj ' + elem);
+   
 })
 
 
@@ -81,39 +74,38 @@ tableau.forEach(elem => {
 } */
 
 const myFunction = (param, param2) => {
-    console.log(param, param2);
+    
     let result = param + param2;
     return result;
 }
 myFunction(6, 3);
 const resultat = myFunction(6, 3);
-console.log(resultat);
+
 
 
 // interagir avec le dom // methode, proprietes, evement
-console.log(window);
-console.log(document);
+
 
 // selectors !
 let header = document.querySelector('header');
-console.log(header);
+
 
 let grids = document.querySelectorAll('.grid');
-console.log(grids.length);
+
 grids.forEach((grid) => {
-    console.log(grid);
+    
 })
 
 header.classList.add('is-black');
 
-console.log(header.classList);
+
 
 // insertion dom 
 
 // événements les plus courants
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM entièrement chargé et analysé");
+    
 });
 /*
 header.addEventListener("mouseenter", () => {
